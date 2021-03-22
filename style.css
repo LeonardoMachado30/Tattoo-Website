@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    font-family: 'Arial';
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*
+****************************HEADER*****************************
+*/
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+.navbar{
+    width: 200vw;
+    z-index: 100;
+    background-color: rgb(255, 0, 0, 0.5) !important;
+}
+
+/*
+**  ICONE
+*/
+
+ion-icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+ion-icon:hover{
+    color: red;
+}
+
+/*
+** LOGOTIPO
+*/
+
+.format-logo-topo{
+    margin-top: 100px;
+}
+
+.logotipo{
+    background: linear-gradient(-40deg, black, red) no-repeat;
+    background-size: 300% 300%;
+    height: 110vh;
+    font-size: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: logotipo 5s ease infinite;
+    margin-top: -200px;
+    z-index: -1;    
+}
+
+@keyframes logotipo {
+
+    0%{
+        background-position: 50%;
+    }
+
+    50%{
+        background-position: 50% 100%;
+    }
+
+    100%{
+        background-position: 50%;
+    }
+}
+
+.letra{
+    animation: letra 10s ease;
+    margin-left: 0;
+}
+
+@keyframes letra{
+    0%{
+        opacity: 0;
+    }
+
+   
+    100%{
+        opacity: 1;;
+    }
+}
+
+/*
+********************MAIN********************
+*/
+
+/* PHOTOS*/
+
+.top-bottom-photos{
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+}
+
+.container-photos{
+    background-color: white !important;
+    border-radius: 10px !important;
+}
+
+.h4-custom{
+    font-size: 50px;
+}
+
+.format-widget-photos{
+    margin-left: 10px;
+}
+
+.height-personal{
+    height: 50vh;
+    width: 80vw;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/*
+** ABOUT
+*/ 
+.container-about{
+    background-color:white;
+    height: 50vh;
+    width: 80vw;
+    margin-left: 10%;
+    border-radius: 100px;
+}
+
+.format-p-about{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 30pt;
+}
+
+
+/*
+**  CONTACT
+*/
+
+.top-bottom-contact{
+    margin-top: 0vh;
+    margin-bottom: 20vh;
+}
+
+.format-logo-contacts{
+    color: black;
+    width: 300px;
+    height: 300px;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.format-p-contact{
+    padding-left: 30%;
+    padding-top: 10%;
+    font-size: 30pt;
+}
+
+.format-h2-contact{
+    padding-left: 25%;
+    margin-bottom: -8%;
+    font-size: 30pt;
+}
+
+
+/*
+** LOZALIZATION
+*/
+
+
+.format-container-localization{
+    background-color: white;
+    width: 1150px;
+    height: 1000;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+/*
+**************************FOOTER*************************************
+*/
+
+  .footer{
+    align-items: center !important;
+    align-self: center !important;
+    text-align-last: center !important;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: #fff !important;
+    border-radius: 10px 10px 0px 0px;
+    bottom:0;
+}
+
+
+/* 
+** RESPONSIVIDADE
+*/
+
+@media only screen and (max-width: 900px){
+    .logotipo{
+        height: 30vh;
+    }
+    .letra{
+        font-size: 10px;
+    }
+}
