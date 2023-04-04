@@ -2,6 +2,6 @@
 
 Landing page de catalogos de tatuagem
 
-Tecnologias:
+## Tecnologias:
 
-## HTML | CSS | Bootstrap | Javascript 
+### HTML | CSS | Bootstrap | Javascript 
